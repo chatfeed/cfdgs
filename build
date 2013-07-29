@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export GOBIN=./bin
+export GOPATH=`pwd`
+echo $GOPATH
+go get github.com/golang/glog
+go get github.com/larspensjo/Go-sync-evaluation/evalsync
+go get github.com/asjustas/goini
+go install ./...
